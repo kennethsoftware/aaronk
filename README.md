@@ -4,6 +4,8 @@ Simple boilerplate using Node, Express and set up to use some vanilla JavaScript
 ## Why?
 Whenever I start new projects I always spend time messing around getting things set up so thought instead if I keep this updated I've always got a good place to start! Feel free to fork / edit and make your own implementations, it's just a basis for how I like to start off smaller monorepo projects and freelance work.
 
+This is also set up with the idea of deploying it in the future so comes with basic support for environment switching of environment variables and other config values etc. I tend to use [heroku](https://heroku.com) to deploy any of my projects and this boilerplate works great with it / they are just really good with a nice CLI, tons of addons and support for things like SSL with lets encrypt.
+
 ## Setting up
 Make sure node `7.6.0` is installed to take advantage of that sweet async await goodness! (Obviously this doesn't utilise that in its current form but the idea being that once you begin fleshing it out with your own project you can take advantage of it)
 
