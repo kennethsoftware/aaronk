@@ -4,7 +4,9 @@ const envConfig = {
   production: {}
 };
 
-const defaultConfig = {};
+const defaultConfig = {
+  title: 'AaronK | Full-Stack Sofware Engineer specialising in Front-End'
+};
 
 const config = Object.assign({}, defaultConfig, envConfig[environment]);
 

@@ -1,6 +1,17 @@
 doctype html
 html
   head
-    title= title
-    script(src="/js/index.js")
+    title #{title}
+    script(src="/js/styles.js")
   body
+    main.container
+      section.container__heading AaronK
+      section.container__social-links
+        a.social-link(href="https://linkedin.com/in/aarongkendall" target="_blank")
+          img(src="/img/linkedin.svg")
+        a.social-link(href="mailto:hello@aaronk.co")
+          img(src="/img/#.svg")
+        a.social-link(href="https://github.com/aaronkendall" target="_blank")
+          img(src="/img/github.svg")
+          
+      

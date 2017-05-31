@@ -17,6 +17,7 @@ const plugins = {
 module.exports = {
     entry: {
         index: "./src/js/index.js",
+        styles: "./src/js/styles/main.scss"
     },
     output: {
         path: path.resolve(__dirname, './src/app/public/js'),
