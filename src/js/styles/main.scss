@@ -6,6 +6,8 @@
 // reset the styles
 @import 'base/reset';
 
+@import 'animations/animations';
+
 body {
   font-family: 'Oswald', sans-serif;
   font-size: 100%;
@@ -24,23 +26,88 @@ body {
 .container__heading {
   font-family: 'Knewave', cursive;
   font-size: 10em;
-  justify-content: center;
-  width: 50%;
   padding: 0 15px;
   margin: 0 auto;
   text-align: center;
+  box-sizing: border-box;
+  color: #f06292;
+
+  @media(max-width: $small-viewport-width) {
+    padding: 0;
+    font-size: 5em;
+  }
+}
+
+.container__bio {
+  font-size: 2em;
+  width: 50%;
+  text-align: justify;
+  margin: 0 auto;
+  padding: 45px;
+  box-sizing: border-box;
+
+  @media(max-width: $small-viewport-width) {
+    padding: 45px 20px;
+    width: 100%;
+  }
 }
 
 .container__social-links {
   justify-content: space-between;
   font-size: 1em;
   display: flex;
-  justify-content: space-between;
   width: 50%;
   margin: 0 auto;
-  padding: 48px 15px;
+  padding: 48px 0px;
+
+  @media(max-width: $small-viewport-width) {
+    display: block;
+    padding: 25px 0px;
+  }
 }
 
 .social-link {
+  text-align: center;
 
+  @media(max-width: $small-viewport-width) {
+    width: 100%;
+  }
+}
+
+.social-icon {
+  width: 75px;
+
+  @media(max-width: $small-viewport-width) {
+    width: 150px;
+  }
+}
+
+.social-icon:hover {
+  opacity: 0.8;
+
+  @media(max-width: $medium-viewport-width) {
+    opacity: 1;
+  }
+}
+
+.social-icon-text {
+  position: relative;
+  bottom: -15px;
+  left: 0;
+  visibility: hidden;
+  color: #f06292;
+}
+
+.social-link:hover .social-icon-text {
+  visibility: visible;
+  animation-name: slideUp;
+  -webkit-animation-name: slideUp;
+  animation-duration: 1.2s;
+  -webkit-animation-duration: 1.2s;
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+
+  @media(max-width: $medium-viewport-width) {
+    visibility: hidden;
+  }
 }

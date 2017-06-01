@@ -3,15 +3,25 @@ html
   head
     title #{title}
     script(src="/js/styles.js")
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel="icon" type="image/x-icon" href="/img/favicon.ico")
   body
     main.container
       section.container__heading AaronK
+      section.container__bio
+        | Hi, my name is Aaron and I am a Software Engineer at #[a(href="https://moo.com") MOO]!
+        | I also do freelance development as well, you can poke around at the things I've done 
+        | or contact me with the buttons below.
       section.container__social-links
-        a.social-link(href="https://linkedin.com/in/aarongkendall" target="_blank")
-          img(src="/img/linkedin.svg")
-        a.social-link(href="mailto:hello@aaronk.co")
-          img(src="/img/#.svg")
-        a.social-link(href="https://github.com/aaronkendall" target="_blank")
-          img(src="/img/github.svg")
-          
-      
+        .social-link
+          a(href="https://linkedin.com/in/aarongkendall" target="_blank")
+            img.social-icon(src="/img/linkedin.svg")
+          p.social-icon-text LinkedIn
+        .social-link
+          a(href="mailto:hello@aaronk.co")
+            img.social-icon(src="/img/email.svg")
+          p.social-icon-text Email
+        .social-link
+          a(href="https://github.com/aaronkendall" target="_blank")
+            img.social-icon(src="/img/github.svg")
+          p.social-icon-text GitHub
